@@ -1734,7 +1734,7 @@ header .navbar-expand {
   top: 0;
   z-index: 2;
   width: 100%;
-  padding: 20px 25px;
+  padding: 10px 25px;
   pointer-events: initial;
 }
 
@@ -4851,5 +4851,8 @@ footer .copyright a:not(.btn) {
 
   /* #endregion General */
 }
-
+.nav-logo {
+  width: 90px;
+  height: 80px;
+}
 /* #endregion All Media Queries */
