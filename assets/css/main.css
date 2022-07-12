@@ -4851,8 +4851,11 @@ footer .copyright a:not(.btn) {
 
   /* #endregion General */
 }
-.nav-logo {
+.navbar-brand {
+  height: auto;
+}
+#logo {
   width: 90px;
-  height: 80px;
+  height: 65px;
 }
 /* #endregion All Media Queries */
