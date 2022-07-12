@@ -4858,4 +4858,7 @@ footer .copyright a:not(.btn) {
   width: 90px;
   height: 65px;
 }
+.nav-link {
+  transition: 0.7s;
+}
 /* #endregion All Media Queries */
