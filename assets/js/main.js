@@ -142,7 +142,7 @@ jQuery(function ($) {
         }
 
         // Top
-        if ($(window).scrollTop() <= 100 && $('.navbar-holder').length == 0) {
+        if ($(window).scrollTop() <= 100 && $('. navbar-holder').length == 0) {
           navbar.removeClass('navbar-sticky');
         } else {
           if (!navbar.hasClass('navbar-no-fixed')) {
