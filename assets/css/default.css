@@ -2,10 +2,7 @@
 *
 * [Default Stylesheet]
 *
-* Theme    : Leverage
-* Version  : 2.1
-* Author   : Codings
-* Support  : codings.dev
+* 
 * 
 ----------------------------------------------*/
 
@@ -266,6 +263,9 @@ footer .dark-button {
   background-size: 200% auto;
   -webkit-animation: effect 1s linear infinite;
   animation: effect 1s linear infinite;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 /* #endregion Effect */
