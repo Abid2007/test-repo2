@@ -2788,7 +2788,7 @@ header .navbar-expand .navbar-brand img {
   position: relative;
   z-index: 1;
   width: 100%;
-  padding: 35px;
+  padding: 25px;
   border: none;
   border-radius: 2px;
   background-color: var(--card-bg-color);
