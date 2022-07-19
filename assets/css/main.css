@@ -4860,7 +4860,5 @@ footer .copyright a:not(.btn) {
 .nav-link {
   transition: 0.7s;
 }
-.card {
-  max-height: 105px;
-}
+
 /* #endregion All Media Queries */
