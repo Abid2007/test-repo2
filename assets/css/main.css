@@ -4860,5 +4860,8 @@ footer .copyright a:not(.btn) {
 .nav-link {
   transition: 0.7s;
 }
+#phn {
+  font-size: 30px;
+}
 
 /* #endregion All Media Queries */
