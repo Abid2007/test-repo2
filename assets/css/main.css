@@ -4863,5 +4863,7 @@ footer .copyright a:not(.btn) {
 #phn {
   font-size: 30px;
 }
-
+.d-flex {
+  flex-wrap: wrap;
+}
 /* #endregion All Media Queries */
