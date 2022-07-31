@@ -3118,7 +3118,7 @@ header .navbar-expand .navbar-brand img {
 
 .share-list .nav-link i {
   margin: 0 1rem;
-  font-size: 22px;
+  font-size: 30px;
   background-image: -webkit-linear-gradient(
     45deg,
     var(--secondary-color) 15%,
@@ -4865,5 +4865,11 @@ footer .copyright a:not(.btn) {
 }
 .d-flex {
   flex-wrap: wrap;
+}
+.custom-ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 /* #endregion All Media Queries */
