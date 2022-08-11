@@ -4872,4 +4872,7 @@ footer .copyright a:not(.btn) {
   justify-content: center;
   flex-direction: row;
 }
+.widget-services {
+  width: 100%;
+}
 /* #endregion All Media Queries */
