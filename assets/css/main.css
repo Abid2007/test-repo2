@@ -495,16 +495,8 @@ img {
 }
 
 table {
-  border-collapse: separate;
+  border-collapse: collapse;
   border-spacing: 10px;
-}
-
-table td {
-  padding: 10px 0;
-}
-
-table th {
-  padding: 10px 0;
 }
 
 dt {
