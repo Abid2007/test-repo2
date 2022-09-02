@@ -4852,19 +4852,26 @@ footer .copyright a:not(.btn) {
 #phn {
   font-size: 30px;
 }
-.d-flex {
+/*.d-flex {
   flex-wrap: wrap;
-}
+}*/
 .custom-ul {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
 }
-.widget-services {
+/*.widget-services {
   width: 100%;
-}
+}*/
 .list-style-none {
   list-style: none;
+}
+.brand-title {
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+.main-section {
+  padding-top: 0;
 }
 /* #endregion All Media Queries */
