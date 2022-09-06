@@ -4874,4 +4874,19 @@ footer .copyright a:not(.btn) {
 .main-section {
   padding-top: 0;
 }
+.custom-sidebar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 30px;
+}
+@media (max-width: 991px) {
+  .custom-sidebar {
+    position: initial;
+    margin: 0;
+  }
+  section {
+    overflow: hidden;
+  }
+}
 /* #endregion All Media Queries */
