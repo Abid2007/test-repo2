@@ -4889,4 +4889,9 @@ footer .copyright a:not(.btn) {
     overflow: hidden;
   }
 }
+.brand-img {
+  height: 90vh;
+  max-width: min-content;
+  max-height: fit-content;
+}
 /* #endregion All Media Queries */
