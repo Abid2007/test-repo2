@@ -4894,4 +4894,16 @@ footer .copyright a:not(.btn) {
   max-width: min-content;
   max-height: fit-content;
 }
+.custom-ul::after {
+  display: block;
+  position: absolute;
+  content: ' ';
+  z-index: 1;
+  width: 1px;
+  background-color: white;
+  height: 100%;
+  top: 15px;
+  left: 15px;
+}
+
 /* #endregion All Media Queries */
