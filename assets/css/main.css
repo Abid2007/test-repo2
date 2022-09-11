@@ -4894,7 +4894,7 @@ footer .copyright a:not(.btn) {
   max-width: min-content;
   max-height: fit-content;
 }
-.custom-ul::after {
+.custom-list::after {
   display: block;
   position: absolute;
   content: ' ';
