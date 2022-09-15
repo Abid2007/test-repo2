@@ -4905,5 +4905,10 @@ footer .copyright a:not(.btn) {
   top: 15px;
   left: 15px;
 }
-
+.side-bar .list-group-item {
+  padding: 0;
+}
+.side-bar .list-group-item .icon {
+  font-size: 25px;
+}
 /* #endregion All Media Queries */
