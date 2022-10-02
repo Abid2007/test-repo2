@@ -4890,7 +4890,7 @@ footer .copyright a:not(.btn) {
   }
 }
 .brand-img {
-  height: 90vh;
+  height: 80vh;
   max-width: min-content;
   max-height: fit-content;
 }
@@ -4919,5 +4919,30 @@ footer .copyright a:not(.btn) {
 }
 .cursor-pointer:hover {
   cursor: pointer;
+}
+
+@media (max-width: 590px) {
+  .brand-img {
+    height: 65vh;
+  }
+  @media (max-width: 530px) {
+    .brand-img {
+      height: 50vh;
+    }
+  }
+  @media (max-width: 450px) {
+    .custom-font li h4 {
+      font-size: 1rem;
+    }
+  }
+  @media (max-width: 430px) {
+    .brand-img {
+      height: 40vh;
+    }
+    .branding-title {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+  }
 }
 /* #endregion All Media Queries */
