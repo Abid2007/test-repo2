@@ -56,7 +56,7 @@
         --top-nav-item-color: #f5f5f5;
         --hero-bg-color: #000000;
 
-        --section-1-bg-color: #040402;
+        --section-1-bg-color: #111111;
 
         --section-3-bg-color: #111111;
 
@@ -182,7 +182,6 @@
           >
             <h2 class="featured">How Can We Help?</h2>
           </div>
-         
         </div>
         <div class="row justify-content-center text-center items">
           <div class="col-12 col-md-6 col-lg-4 item">
@@ -199,7 +198,6 @@
               <i class="icon icon-envelope"></i>
               <div>
                 <h4>hello@paperdeluxe.net</h4>
-                
               </div>
             </div>
           </div>
@@ -292,19 +290,23 @@
                     <h2 class="featured alt">Let's Talk?</h2>
                     <p></p>
                   </div>
-                  
                 </div>
               </div>
 
               <!-- Steps Group -->
               <div class="row text-center form-content">
                 <div class="col-12 p-0">
-                   <!-- Group 1 -->
+                  <!-- Group 1 -->
                   <fieldset class="step-group">
-                    
                     <div class="row">
                       <div class="col-12 input-group p-0">
-                        <input type="text" name="name" data-minlength="3"class="form-control field-name"placeholder="Name"/>
+                        <input
+                          type="text"
+                          name="name"
+                          data-minlength="3"
+                          class="form-control field-name"
+                          placeholder="Name"
+                        />
                       </div>
                     </div>
                     <div class="row">
@@ -318,7 +320,7 @@
                         />
                       </div>
                     </div>
-                    
+
                     <div class="row">
                       <div class="col-12 input-group p-0">
                         <input
@@ -330,7 +332,7 @@
                         />
                       </div>
                     </div>
-                   
+
                     <div class="row">
                       <div class="col-12 input-group p-0">
                         <textarea
@@ -341,6 +343,7 @@
                           required
                         ></textarea>
                       </div>
+                    </div>
 
                     <div class="col-12 input-group p-0">
                       <a class="step-next btn primary-button"
@@ -350,29 +353,20 @@
                   </fieldset>
                 </div>
 
-
-                
-                <script src="https://smtpjs.com/v3/smtp.js"> </script>
+                <script src="https://smtpjs.com/v3/smtp.js"></script>
                 <script>
-                  function sendEmail () {
+                  function sendEmail() {
                     Email.send({
-                     Host : "smtp.yourisp.com",
-                     Username : "",
-                     Password : "password",
-                     To : '',
-                      From : "abidmazumder5@gmail.com",
-                      Subject : "This is the subject",
-                      Body : "And this is the body"
-                      }).then(
-                        message => alert(message)
-                      );
-                    
+                      Host: 'smtp.yourisp.com',
+                      Username: '',
+                      Password: 'password',
+                      To: '',
+                      From: 'abidmazumder5@gmail.com',
+                      Subject: 'This is the subject',
+                      Body: 'And this is the body',
+                    }).then((message) => alert(message));
                   }
-
-
                 </script>
-
-
               </div>
             </div>
 
@@ -399,54 +393,71 @@
     </section>
 
     <!-- Footer -->
-    <footer class="odd">
+    <footer class="odd pt-5">
       <!-- Footer [links] -->
       <section id="footer" class="footer">
         <div class="container">
           <div class="row items footer-widget">
-            <div class="col-12 col-lg-8 p-0">
-              <div class="row">
-                <div
-                  class="col-12 col-lg-6 p-3 text-center text-lg-left item h-100"
-                >
-                  <h4 class="title">Phone</h4>
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a href="telto:+8801975026120" class="nav-link">
-                        <i class="icon-phone mr-2"></i>
-                        +8801975-026120
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="telto:+8801315026120" class="nav-link">
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <span class="ml-2">+8801315-026120</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-12 col-lg-6 p-3 text-center text-lg-left item">
-                  <h4 class="title">Email</h4>
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a href="mailto:hello@paperdeluxe.net" class="nav-link">
-                        <i class="icon-envelope mr-2"></i>
-                        hello@paperdeluxe.net
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+            <div class="col-lg-4 p-3 text-center text-lg-left item h-100">
+              <h4 class="title">Who we are</h4>
+              <p>
+                The paper deluxe is a team of internet marketers Specialized in
+                Digital marketing, SEO, Web design, Graphics design. Based in
+                the port city Chattogram, Bangladesh, we offer our services all
+                around the world.
+              </p>
             </div>
-            <div class="col-12 col-lg-4 p-0">
-              <div class="row h-100">
-                <div
-                  class="branding col-12 p-3 text-center text-lg-left item h-100"
-                >
+            <div class="col-lg-4 p-3 text-center text-lg-left item">
+              <h4 class="title mx-5">WHAT WE DO</h4>
+              <ul class="list-group">
+                <li class="list-style-none mx-5">
+                  <i class="icon-check"></i>
+                  Digital Marketing
+                </li>
+                <li class="list-style-none mx-5">
+                  <i class="icon-check"></i>
+                  Marketing Advisor
+                </li>
+                <li class="list-style-none mx-5">
+                  <i class="icon-check"></i>
+                  Website design
+                </li>
+                <li class="list-style-none mx-5">
+                  <i class="icon-check"></i>
+                  Graphics design
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 p-0">
+              <div class="row">
+                <div class="branding col-12 p-3 text-center text-lg-left item">
                   <div class="brand">
-                    <h4 class="title">Social</h4>
+                    <h4 class="title">Contact us</h4>
                   </div>
-                  <div class="align-item-center h-75">
+                  <div class="align-item-center">
+                    <p>Oxygen mor,Bayazid Bostami,Chattogram.</p>
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a href="telto:+8801975026120" class="nav-link">
+                          <i class="icon-phone mr-2"></i>
+                          +8801975-026120
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="telto:+8801315026120" class="nav-link">
+                          <i class="fa-brands fa-whatsapp"></i>
+                          <span class="ml-2">+8801315-026120</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="mailto:hello@paperdeluxe.net" class="nav-link">
+                          <i class="icon-envelope mr-2"></i>
+                          hello@paperdeluxe.net
+                        </a>
+                      </li>
+                    </ul>
+
                     <ul
                       class="navbar-nav social share-list my-4 ml-auto align-items-center"
                     >
@@ -483,6 +494,14 @@
                           href="https://www.youtube.com/channel/UCSJl4-GNG-NasXseJ1hSPTA"
                           class="nav-link"
                           ><i class="icon-social-youtube"></i
+                        ></a>
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          href="https://www.facebook.com/shoppaperdeluxe"
+                          class="nav-link"
+                          target="_blank"
+                          ><i class="fa fa-cart-shopping"></i
                         ></a>
                       </li>
                     </ul>

@@ -304,8 +304,6 @@
               </div>
             </div>
           </main>
-
-          
         </div>
       </div>
     </section>
@@ -313,54 +311,270 @@
     <!-- About [video] -->
 
     <!-- Footer -->
-    <footer class="odd">
+    <section
+      id="portfolio"
+      class="section-2 odd offers secondary featured all py-5"
+    >
+      <div class="container py-5">
+        <h1 class="text-center title effect-static-text">
+          The paper deluxe Approach.
+        </h1>
+        <p style="text-align: center">
+          We help you grow online the moment you connect with us and quality
+          customer service.
+        </p>
+        <div class="row intro">
+          <p class="text-center">
+            3 Simple Steps to Better
+            <span style="color: white">Rankings on Search Engine,</span> More
+            <span style="color: white">Traffic to Your Website,</span> and More
+            <span style="color: white">Leads and Phone Calls</span> Get paper
+            deluxe as your digital marketing partner to grow online
+          </p>
+          <div
+            class="col-12 col-md-9 align-self-center text-center text-md-left"
+          ></div>
+        </div>
+        <div class="row justify-content-center text-center items">
+          <div class="col-12 col-md-6 col-lg-4 item">
+            <div class="card featured">
+              <div class="gallery">
+                <a href="assets/images/work-1.jpg">
+                  <img src="assets/images/work-1.jpg" alt="Visual Art" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 item">
+            <div class="card">
+              <div class="gallery">
+                <a href="assets/images/work-2.jpg">
+                  <img src="assets/images/work-2.jpg" alt="Visual Art" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 item">
+            <div class="card featured">
+              <div class="gallery">
+                <a href="assets/images/work-3.jpg">
+                  <img src="assets/images/work-3.jpg" alt="Visual Art" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section-1 form odd featured all">
+      <div class="container">
+        <form action="php/form.php" id="leverage-form" class="multi-step-form">
+          <input type="hidden" name="section" value="leverage_form" />
+
+          <input type="hidden" name="reCAPTCHA" />
+
+          <div class="row">
+            <div
+              class="col-12 col-md-6 align-self-start text-center text-md-left"
+            >
+              <!-- Success Message -->
+              <div class="row success message">
+                <div class="col-12 p-0">
+                  <div class="wait">
+                    <div class="spinner-grow" role="status">
+                      <span class="sr-only">Loading</span>
+                    </div>
+                    <h3 class="sending">SENDING</h3>
+                  </div>
+                  <div class="done">
+                    <i class="icon bigger icon-check"></i>
+                    <h3>Your message was sent successful. Thanks.</h3>
+                    <a href="" class="btn mx-auto primary-button">
+                      <i class="icon-refresh"></i>
+                      REFRESH
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Steps Message -->
+              <div class="row intro form-content">
+                <div class="col-12 p-0">
+                  <!-- Step Title -->
+                  <div class="step-title">
+                    <h2 class="featured alt">Let's Talk?</h2>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Steps Group -->
+              <div class="row text-center form-content">
+                <div class="col-12 p-0">
+                  <!-- Group 1 -->
+                  <fieldset class="step-group">
+                    <div class="row">
+                      <div class="col-12 input-group p-0">
+                        <input
+                          type="text"
+                          name="name"
+                          data-minlength="3"
+                          class="form-control field-name"
+                          placeholder="Name"
+                        />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 input-group p-0">
+                        <input
+                          type="text"
+                          name="phone"
+                          data-minlength="3"
+                          class="form-control field-phone"
+                          placeholder="Phone"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-12 input-group p-0">
+                        <input
+                          type="email"
+                          name="email"
+                          data-minlength="3"
+                          class="form-control field-email"
+                          placeholder="Email"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-12 input-group p-0">
+                        <textarea
+                          name="message"
+                          data-minlength="3"
+                          class="form-control field-message"
+                          placeholder="Message"
+                          required
+                        ></textarea>
+                      </div>
+                    </div>
+
+                    <div class="col-12 input-group p-0">
+                      <a class="step-next btn primary-button"
+                        >Get In Touch<i class="icon-arrow-right-circle left"></i
+                      ></a>
+                    </div>
+                  </fieldset>
+                </div>
+
+                <script src="https://smtpjs.com/v3/smtp.js"></script>
+                <script>
+                  function sendEmail() {
+                    Email.send({
+                      Host: 'smtp.yourisp.com',
+                      Username: '',
+                      Password: 'password',
+                      To: '',
+                      From: 'abidmazumder5@gmail.com',
+                      Subject: 'This is the subject',
+                      Body: 'And this is the body',
+                    }).then((message) => alert(message));
+                  }
+                </script>
+              </div>
+            </div>
+
+            <div
+              class="content-images col-12 col-md-6 pl-md-5 d-none d-md-block"
+            >
+              <!-- Step 1 -->
+              <div class="gallery">
+                <a class="step-image" data-poster="assets/images/about-8.jpg">
+                  <i class="play-video icon-control-play"></i>
+                  <div class="mask-radius"></div>
+                  <img
+                    src="assets/images/about-8.jpg"
+                    class="fit-image"
+                    alt="Contact Us"
+                  />
+                </a>
+              </div>
+              <!-- Step 4 -->
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="odd pt-5">
       <!-- Footer [links] -->
       <section id="footer" class="footer">
         <div class="container">
           <div class="row items footer-widget">
-            <div class="col-12 col-lg-8 p-0">
-              <div class="row">
-                <div
-                  class="col-12 col-lg-6 p-3 text-center text-lg-left item h-100"
-                >
-                  <h4 class="title">Phone</h4>
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a href="telto:+8801975026120" class="nav-link">
-                        <i class="icon-phone mr-2"></i>
-                        +8801975-026120
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="telto:+8801315026120" class="nav-link">
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <span class="ml-2">+8801315-026120</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-12 col-lg-6 p-3 text-center text-lg-left item">
-                  <h4 class="title">Email</h4>
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a href="mailto:hello@paperdeluxe.net" class="nav-link">
-                        <i class="icon-envelope mr-2"></i>
-                        hello@paperdeluxe.net
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+            <div class="col-lg-4 p-3 text-center text-lg-left item h-100">
+              <h4 class="title">Who we are</h4>
+              <p>
+                The paper deluxe is a team of internet marketers Specialized in
+                Digital marketing, SEO, Web design, Graphics design. Based in
+                the port city Chattogram, Bangladesh, we offer our services all
+                around the world.
+              </p>
             </div>
-            <div class="col-12 col-lg-4 p-0">
-              <div class="row h-100">
-                <div
-                  class="branding col-12 p-3 text-center text-lg-left item h-100"
-                >
+            <div class="col-lg-4 p-3 text-center text-lg-left item">
+              <h4 class="title mx-5">WHAT WE DO</h4>
+              <ul class="list-group">
+                <li class="list-style-none mx-5">
+                  <i class="icon-check"></i>
+                  Digital Marketing
+                </li>
+                <li class="list-style-none mx-5">
+                  <i class="icon-check"></i>
+                  Marketing Advisor
+                </li>
+                <li class="list-style-none mx-5">
+                  <i class="icon-check"></i>
+                  Website design
+                </li>
+                <li class="list-style-none mx-5">
+                  <i class="icon-check"></i>
+                  Graphics design
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 p-0">
+              <div class="row">
+                <div class="branding col-12 p-3 text-center text-lg-left item">
                   <div class="brand">
-                    <h4 class="title">Social</h4>
+                    <h4 class="title">Contact us</h4>
                   </div>
-                  <div class="align-item-center h-75">
+                  <div class="align-item-center">
+                    <p>Oxygen mor,Bayazid Bostami,Chattogram.</p>
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a href="telto:+8801975026120" class="nav-link">
+                          <i class="icon-phone mr-2"></i>
+                          +8801975-026120
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="telto:+8801315026120" class="nav-link">
+                          <i class="fa-brands fa-whatsapp"></i>
+                          <span class="ml-2">+8801315-026120</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="mailto:hello@paperdeluxe.net" class="nav-link">
+                          <i class="icon-envelope mr-2"></i>
+                          hello@paperdeluxe.net
+                        </a>
+                      </li>
+                    </ul>
+
                     <ul
                       class="navbar-nav social share-list my-4 ml-auto align-items-center"
                     >
@@ -399,6 +613,14 @@
                           ><i class="icon-social-youtube"></i
                         ></a>
                       </li>
+                      <li class="nav-item">
+                        <a
+                          href="https://www.facebook.com/shoppaperdeluxe"
+                          class="nav-link"
+                          target="_blank"
+                          ><i class="fa fa-cart-shopping"></i
+                        ></a>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -422,7 +644,6 @@
         </div>
       </section>
     </footer>
-
     <!-- #region Global ============================ -->
 
     <!-- Modal [search] -->
