@@ -250,13 +250,17 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="section-3 form odd">
+    <section id="contact" class="section-1 form odd featured all">
       <div class="container">
-        <form action="php/form.php" id="leverage-form" class="multi-step-form">
+        <form
+          action="sendemail.php"
+          method="post"
+          id="leverage-form"
+          class="multi-step-form"
+        >
           <input type="hidden" name="section" value="leverage_form" />
 
           <input type="hidden" name="reCAPTCHA" />
-          <!-- Remove this field if you want to disable recaptcha -->
 
           <div class="row">
             <div
@@ -265,16 +269,16 @@
               <!-- Success Message -->
               <div class="row success message">
                 <div class="col-12 p-0">
-                  <div class="wait">
-                    <div class="spinner-grow" role="status">
-                      <span class="sr-only">Loading</span>
-                    </div>
-                    <h3 class="sending">SENDING</h3>
-                  </div>
+                  <!--<div class="wait">-->
+                  <!--  <div class="spinner-grow" role="status">-->
+                  <!--    <span class="sr-only">Loading</span>-->
+                  <!--  </div>-->
+                  <!--  <h3 class="sending">SENDING</h3>-->
+                  <!--</div>-->
                   <div class="done">
                     <i class="icon bigger icon-check"></i>
                     <h3>Your message was sent successful. Thanks.</h3>
-                    <a href="" class="btn mx-auto primary-button">
+                    <a href="/" class="btn mx-auto primary-button">
                       <i class="icon-refresh"></i>
                       REFRESH
                     </a>
@@ -301,6 +305,7 @@
                     <div class="row">
                       <div class="col-12 input-group p-0">
                         <input
+                          required
                           type="text"
                           name="name"
                           data-minlength="3"
@@ -312,6 +317,7 @@
                     <div class="row">
                       <div class="col-12 input-group p-0">
                         <input
+                          required
                           type="text"
                           name="phone"
                           data-minlength="3"
@@ -324,6 +330,7 @@
                     <div class="row">
                       <div class="col-12 input-group p-0">
                         <input
+                          required
                           type="email"
                           name="email"
                           data-minlength="3"
@@ -346,27 +353,15 @@
                     </div>
 
                     <div class="col-12 input-group p-0">
-                      <a class="step-next btn primary-button"
-                        >Get In Touch<i class="icon-arrow-right-circle left"></i
-                      ></a>
+                      <button
+                        type="submit"
+                        class="step-next btn primary-button"
+                      >
+                        Get In Touch<i class="icon-arrow-right-circle left"></i>
+                      </button>
                     </div>
                   </fieldset>
                 </div>
-
-                <script src="https://smtpjs.com/v3/smtp.js"></script>
-                <script>
-                  function sendEmail() {
-                    Email.send({
-                      Host: 'smtp.yourisp.com',
-                      Username: '',
-                      Password: 'password',
-                      To: '',
-                      From: 'abidmazumder5@gmail.com',
-                      Subject: 'This is the subject',
-                      Body: 'And this is the body',
-                    }).then((message) => alert(message));
-                  }
-                </script>
               </div>
             </div>
 

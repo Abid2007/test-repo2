@@ -794,3 +794,31 @@ jQuery(function ($) {
 
 const year = new Date().getFullYear();
 document.getElementById('output').innerHTML = year;
+
+// Get the value of the "response" query string parameter
+var queryString = window.location.search;
+var response = getParameterByName("response", queryString);
+// Check for the presence of the "response" parameter
+if (response == "success") {
+  // Display a success message
+  var elements = document.getElementsByClassName("row success message");
+
+  // Get the first element from the list
+  var element = elements[0];
+
+  // Add a new class to the element
+  element.classList.add("active");
+} else {
+  // Display an error message
+}
+// Function to get the value of a query string parameter
+function getParameterByName(name, url) {
+  if (!url) url = window.location.href;
+  name = name.replace(/[\[\]]/g, "\\$&");
+  var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+    results = regex.exec(url);
+  if (!results) return null;
+  if (!results[2]) return "";
+  return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+

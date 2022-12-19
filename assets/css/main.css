@@ -4965,3 +4965,6 @@ footer .copyright a:not(.btn) {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.form .message.active .done {
+  display: block;
+}
