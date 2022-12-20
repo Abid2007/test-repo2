@@ -4,7 +4,7 @@
   $phone = $_POST['phone'];
   $message = $_POST['message'];
   $subject = 'Inquiry from Paper Deluxe website!';
-  $to = 'jakariakr@gmail.com';  // Change this to your email address
+  $to = 'hello@paperdeluxe.net';  // Change this to your email address
   $from = "$name <$email>";
   $headers  = "MIME-Version: 1.0\r\n";
   $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
