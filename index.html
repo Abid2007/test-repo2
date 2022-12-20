@@ -70,8 +70,6 @@
     <link rel="stylesheet" href="/assets/font-awesome/css/all.css" />
     <link rel="stylesheet" href="/assets/font-awesome/css/fontawesome.css" />
     <link rel="stylesheet" href="/assets/font-awesome/css/all.min.css" />
-    <link rel="stylesheet" href="/assets/font-awesome/css/regular.min.css" />
-    <link rel="stylesheet" href="/assets/font-awesome/css/regular.css" />
   </head>
 
   <body class="theme-mode-dark">
@@ -166,7 +164,6 @@
                     data-aos="zoom-out-up"
                     data-aos-delay="400"
                     class="title effect-static-text"
-                    style="font-size: 5.3rem"
                   >
                     Digital Marketing Agency.
                   </h1>
@@ -249,9 +246,9 @@
     <!-- MONEY BACK SECTION -->
 
     <section
-      class="section-1 odd offers featured all px-5 d-flex flex-wrap-reverse"
+      class="section-1 odd offers featured all py-5 px-5 d-flex flex-wrap"
     >
-      <div class="my-2 col-lg-6 p-0 d-flex flex-column justify-content-center">
+      <div class="col-lg-6 d-flex flex-column container py-5">
         <h3>100% Money-Back Guarantee</h3>
         <p>
           If our business service or solutions are not fit for your company or
@@ -259,7 +256,7 @@
           asked. We do not take the money if we can’t help you.
         </p>
 
-        <div class="col-12 col-md-3 align-self-start">
+        <div class="col-md-3 align-self-start">
           <a
             href="/contact"
             class="btn mx-auto mr-md-0 ml-md-auto primary-button"
@@ -267,8 +264,13 @@
           >
         </div>
       </div>
-      <div class="col-lg-6 d-flex align-items-center justify-content-center">
-        <img src="assets/images/money-back.png" class="h-50" />
+      <div class="col-lg-6 py-5 d-flex justify-content-center">
+        <img
+          src="/assets/images/money-back.png"
+          style="max-height: 40vh"
+          class="h-100"
+          alt=""
+        />
       </div>
     </section>
 
@@ -334,12 +336,7 @@
     <!-- Contact -->
     <section id="contact" class="section-1 form odd featured all">
       <div class="container">
-        <form
-          action="sendemail.php"
-          method="post"
-          id="leverage-form"
-          class="multi-step-form"
-        >
+        <form action="php/form.php" id="leverage-form" class="multi-step-form">
           <input type="hidden" name="section" value="leverage_form" />
 
           <input type="hidden" name="reCAPTCHA" />
@@ -351,16 +348,16 @@
               <!-- Success Message -->
               <div class="row success message">
                 <div class="col-12 p-0">
-                  <!--<div class="wait">-->
-                  <!--  <div class="spinner-grow" role="status">-->
-                  <!--    <span class="sr-only">Loading</span>-->
-                  <!--  </div>-->
-                  <!--  <h3 class="sending">SENDING</h3>-->
-                  <!--</div>-->
+                  <div class="wait">
+                    <div class="spinner-grow" role="status">
+                      <span class="sr-only">Loading</span>
+                    </div>
+                    <h3 class="sending">SENDING</h3>
+                  </div>
                   <div class="done">
                     <i class="icon bigger icon-check"></i>
                     <h3>Your message was sent successful. Thanks.</h3>
-                    <a href="/" class="btn mx-auto primary-button">
+                    <a href="" class="btn mx-auto primary-button">
                       <i class="icon-refresh"></i>
                       REFRESH
                     </a>
@@ -387,7 +384,6 @@
                     <div class="row">
                       <div class="col-12 input-group p-0">
                         <input
-                          required
                           type="text"
                           name="name"
                           data-minlength="3"
@@ -399,7 +395,6 @@
                     <div class="row">
                       <div class="col-12 input-group p-0">
                         <input
-                          required
                           type="text"
                           name="phone"
                           data-minlength="3"
@@ -412,7 +407,6 @@
                     <div class="row">
                       <div class="col-12 input-group p-0">
                         <input
-                          required
                           type="email"
                           name="email"
                           data-minlength="3"
@@ -435,15 +429,27 @@
                     </div>
 
                     <div class="col-12 input-group p-0">
-                      <button
-                        type="submit"
-                        class="step-next btn primary-button"
-                      >
-                        Get In Touch<i class="icon-arrow-right-circle left"></i>
-                      </button>
+                      <a class="step-next btn primary-button"
+                        >Get In Touch<i class="icon-arrow-right-circle left"></i
+                      ></a>
                     </div>
                   </fieldset>
                 </div>
+
+                <script src="https://smtpjs.com/v3/smtp.js"></script>
+                <script>
+                  function sendEmail() {
+                    Email.send({
+                      Host: 'smtp.yourisp.com',
+                      Username: '',
+                      Password: 'password',
+                      To: '',
+                      From: 'abidmazumder5@gmail.com',
+                      Subject: 'This is the subject',
+                      Body: 'And this is the body',
+                    }).then((message) => alert(message));
+                  }
+                </script>
               </div>
             </div>
 
