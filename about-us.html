@@ -72,17 +72,53 @@
     <link rel="stylesheet" href="/assets/font-awesome/css/fontawesome.css" />
     <link rel="stylesheet" href="/assets/font-awesome/css/all.min.css" />
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-R8NHM3SMRY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-R8NHM3SMRY"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-  gtag('config', 'G-R8NHM3SMRY');
-</script>
+      gtag('config', 'G-R8NHM3SMRY');
+    </script>
   </head>
 
   <body class="theme-mode-dark">
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute('page_id', '101094235724017');
+      chatbox.setAttribute('attribution', 'biz_inbox');
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: 'v15.0',
+        });
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, 'script', 'facebook-jssdk');
+    </script>
     <!-- page-single-service -->
 
     <!-- Header -->
@@ -798,6 +834,14 @@
           </div>
         </div>
       </div>
+    </div>
+    <div id="whatsapp" class="whatsapp">
+      <a href="https://wa.me/01315026120" target="_blank">
+        <i
+          class="fa-brands fa-whatsapp"
+          style="background-color: #e0040b; color: #fff"
+        ></i>
+      </a>
     </div>
 
     <!-- Scroll [to top] -->
